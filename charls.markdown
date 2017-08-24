@@ -25,7 +25,7 @@ Finder>>应用程序>>右键显示包内容>>contents/Java路径下的charles.ja
 ## charles视图简介
 安装完成，让我们一起看下它的首页，如下图：
 
-[!img](https://i.loli.net/2017/08/22/599c44f537383.jpeg
+> ![img](https://i.loli.net/2017/08/22/599c44f537383.jpeg
 )
 
 charles的Filter功能可以过滤某种host或是url的某个字段；右键选中某个host点击focus，主界面选中过滤栏的focused，会自动筛选出该host的所有请求，常用于不知道关键字的一些请求。响应内容会有JASON格式，内容为图片也可以预览。
@@ -37,8 +37,19 @@ charles的Filter功能可以过滤某种host或是url的某个字段；右键�
 http请求不需要安装证书，而https是需要安装证书的。
 首先，安装charles上的证书：
 
-[!img](https://i.loli.net/2017/08/22/599c4a7fc8e05.jpeg)
+
+> ![img](https://i.loli.net/2017/08/22/599c4a7fc8e05.jpeg)
 
 按步骤安装证书并信任。
 
 其次，安装移动端的证书：
+
+以iphone手机为例，打开手机—设置—无线局域网—选择自己连接的网络右边详情键—HTTP代理选择手动—填写服务器、端口（8888）连接即可。
+
+注意⚠️：因为是将charles运行所在的电脑设置为手机的代理，所以手机上的服务器填写的是电脑的IP。
+
+获取方法：
+
+1.打开终端，输入ipconfig en0，敲回车。
+
+2.打开charles——help——SSL proxying——安装手机证书，弹窗提示中也会有电脑IP。
