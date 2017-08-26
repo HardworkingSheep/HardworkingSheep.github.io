@@ -32,7 +32,7 @@ charles的Filter功能可以过滤某种host或是url的某个字段；右键�
 
 ## 截取移动端的http和https请求
 
-### 各种各样的settings
+### charles电脑与移动端证书的安装
 
 http请求不需要安装证书，而https是需要安装证书的。
 首先，安装charles上的证书：
@@ -42,9 +42,15 @@ http请求不需要安装证书，而https是需要安装证书的。
 
 按步骤安装证书并信任。
 
-其次，安装移动端的证书：
+其次，安装移动端的证书，打开浏览器输入chls.pro/ssl下载证书并安装。
 
-以iphone手机为例，打开手机—设置—无线局域网—选择自己连接的网络右边详情键—HTTP代理选择手动—填写服务器、端口（8888）连接即可。
+### 各种各样的settings
+
+打开charles——proxying——proxying settings——proxies设置好端口，勾上框里的勾勾就完成了电脑上的设置，如图所示：
+
+> ![img](https://i.loli.net/2017/08/26/59a179f4583b8.jpeg)
+
+然后，在手机上设置好代理进行抓包，以iphone手机为例，打开手机—设置—无线局域网—选择自己连接的网络右边详情键—HTTP代理选择手动—填写服务器、端口（8888）连接即可。
 
 注意⚠️：因为是将charles运行所在的电脑设置为手机的代理，所以手机上的服务器填写的是电脑的IP。
 
@@ -53,3 +59,21 @@ http请求不需要安装证书，而https是需要安装证书的。
 1.打开终端，输入ipconfig en0，敲回车。
 
 2.打开charles——help——SSL proxying——安装手机证书，弹窗提示中也会有电脑IP。
+
+各种证书、设置安装好之后，打开charles，会弹toast，点击allow即可看到源源不断的请求冒出来。
+
+
+当然，打开之后你可能会看见如下图的请求：
+
+> ![img](https://i.loli.net/2017/08/26/59a1782617775.jpeg)
+
+选中该乱码的请求，右键，你可以看见它的代理状态为disable，选择蓝色区域中的Enable ssl proxying，下回这个host的请求就会变成enable的状态，到时你看到的就不是一串乱码啦～
+
+打开proxying——ssl proxyingsettings，你会看见你允许的host出现在允许的location中。
+
+
+
+
+
+
+
