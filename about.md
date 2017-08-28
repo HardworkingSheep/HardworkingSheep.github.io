@@ -7,27 +7,26 @@ permalink: /about/
 
 ## 简介:
 
->#### 我是曹阳，现前端开发，前嵌入式应用开发。
+>#### 我是杨倩雯，现为测试工程师。
 
->#### 爱读书，爱音乐，爱篮球。生活可以简单，但不可以粗糙。
+>#### 爱生活、爱旅游，刚入测试领域只能hard hard study。
 
->#### 简约精致是我的人生理念，开放自由是我的编码精神。
+>#### 努力、勇敢。
 
->#### 像大师一样工作，像军人一样战斗，像诗人一样生活。
+>#### 比你优秀的人都在努力，还有什么理由不努力。
 
 <br><br>
 
 ## 关注领域：
 
->#### 大前端、Node.js、Web安全。
+>#### 测试、python
 
 <br><br>
 
 ## 联系方式:
 
->#### Github: [https://github.com/answershuto](https://github.com/answershuto)
+>#### Github: [https://github.com/HardworkingSheep](https://github.com/HardworkingSheep)
 
->#### Email:  [answershuto@gmail.com](answershuto@gmail.com) or [answershuto@126.com](answershuto@126.com)
-
+>#### Email:  [772409305@qq.com](772409305@qq.com)
 
 
