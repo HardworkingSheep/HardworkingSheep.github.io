@@ -6,7 +6,7 @@ categories: jekyll update
 tags: [抓包工具]
 excerpt: charles.
 ---
-
+ 
 # charles抓包工具小试牛刀
 
 ## charles的简介
@@ -90,27 +90,37 @@ http请求不需要安装证书，而https是需要安装证书的。
 
 首先，你得把这个接口找到，如图，右键选中该请求，允许将该请求打断点：
 
-> ![img](https://ooo.0o0.ooo/2017/08/29/59a57f5446cfb.jpeg)
+> ![img](https://i.loli.net/2017/09/02/59aab228c3f50.png)
+
+找到接口之后，把请求中的内容复制出来，放在文本编辑器中，如Sublime Text中。提前看好需要修改的字段，本例中可以看到这条话题的likeNum为2，也就是说点赞的人数为2。下面，我们就用断点的方式，把likeNum改为99999999。
+
+找到该接口之后，需要把这个请求设置为允许断点的情况：
+
+> ![img](https://i.loli.net/2017/09/02/59aab0db392d1.png)
 
 然后在Proxy中找到断点设置：
-> ![img](https://ooo.0o0.ooo/2017/08/29/59a57fb3565f6.jpeg)
+> ![img](https://i.loli.net/2017/09/02/59aab0f4e739c.png)
 
-> ![img](https://ooo.0o0.ooo/2017/08/29/59a57fcfa7cb6.png)
+> ![img](https://i.loli.net/2017/09/02/59aab1204403b.png)
 
 你可以看到，之前所选中的/community/category/post/get这个接口出现在了断点设置的列表，点击进入断点编辑页面：
 
-> ![img](https://ooo.0o0.ooo/2017/08/29/59a580e3c5831.jpeg)
+> ![img](https://i.loli.net/2017/09/02/59aab150f239e.png)
 
 把其中的Query清空或输入*，去掉request前面的勾（不然执行的时候得点两次运行）即完成设置。
 
 之前抓到该请求的时候，把请求中的内容复制出来粘在文本编辑器如sublime text等中，找到likeview字段，该数值为0，将其改成你需要的值，如99999999，全部copy。
 
-重新请求该内容，charles会自动拦截该请求，跳转到编辑response内容页面，选择Jason text形式，讲复制的内容copy进去，点击execute执行。
-> ![img](https://ooo.0o0.ooo/2017/08/29/59a5826e780d0.png)
+重新请求该内容，charles会自动拦截该请求，跳转到编辑response内容页面，选择Jason Text形式，讲复制的内容copy进去，点击execute执行。
+> ![img](https://i.loli.net/2017/09/02/59aab17b2a206.png)
 
 你将看到客户端的响应内容为你所编辑的内容。注：请求响应有一定的时间，超时就会出现网络不给力的情况，所以这也是为什么需要提前编辑好内容而不是当场找字段修改的原因。
 
+最终，我们可以看到移动端的结果如下：
+
 > ![img]()
+
+
 
 
 
