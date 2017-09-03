@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "charles"
+title:  "charles抓包工具小试牛刀"
 date:   2017-08-27 22:49:00 +0800
 categories: jekyll update
 tags: [抓包工具]
@@ -118,11 +118,13 @@ http请求不需要安装证书，而https是需要安装证书的。
 
 最终，我们可以看到移动端的结果如下：
 
-> ![img]()
+> ![img](https://i.loli.net/2017/09/03/59abfb5478f9d.png)
 
+## repeat功能使用
 
+repeat，顾名思义就是重复请求的意思，一般对于测试人员来说，这个可以用作对服务器的压力测试。试想，同一个接口，同时去请求多次，只要对数值进行设置即可。选中需要重复多次的请求右键，你会看到一个repeat advanced，点击进入设置打压的并发进程和压测的次数。确定之后，再做一次请求，就会新打开一个窗口，一连串冒出你需要重复的请求次数。
 
-
+> ![img](https://i.loli.net/2017/09/03/59abfb5478f9d.png)
 
 
 
