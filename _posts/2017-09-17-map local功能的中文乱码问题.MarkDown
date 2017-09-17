@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "charles抓包工具小试牛刀"
+date:   2017-09-17 22:49:00 +0800
+categories: jekyll update
+tags: [charles 中文乱码问题]
+excerpt: charles.
+---
+ 
+# charles抓包工具中文乱码问题
+
+charles是一款非常适合mac使用的抓包工具，其功能的强大对于测试人员来说掌握熟悉之后，能提高不少工作效率。之前整理过charles抓包工具对测试人员来说的使用点。其实在整理到
+
+Map Local时，重定向遇到了中文乱码的问题，查询部分资料才解决这个问题。现也整理进自己的学习笔记，以便大家入坑。
+
+## 编码格式的自查 
+
+一般UTF-8得编码格式能被charles识别，所以在重定向的时候，可以检查文件内容是什么编码格式。我用的是sublime text，打开Preferences——Settings-Default：
+
+> ![img](https://i.loli.net/2017/09/17/59be6a3e74008.png)
+
+> ![img](https://i.loli.net/2017/09/17/59be6a4654d02.png)
+
+找到default_encoding的值，查看是否为UTF-8.若是则改成这个格式，尝试看看，一般都是可以解决问题了。若还不行，则继续往下看。
+
+我们需要用到charles中的rewrite功能，将某些内容替换成UFT-8可以识别的内容。
+
