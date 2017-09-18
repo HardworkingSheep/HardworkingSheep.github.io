@@ -25,3 +25,35 @@ Map Local时，重定向遇到了中文乱码的问题，查询部分资料才�
 
 我们需要用到charles中的rewrite功能，将某些内容替换成UFT-8可以识别的内容。
 
+首先选中工具栏的Tools——Rewrite选项，进入Rewrite settings界面：
+
+> ![img](https://i.loli.net/2017/09/18/59bf84850b484.png)
+
+> ![img](https://i.loli.net/2017/09/18/59bf84be8c7ad.png)
+
+上面那张图就是Rewrite的设置内容。
+
+第一步，当然是Enable你的Rewrite啦；
+
+第二步，add一个set，就会出现第三步默认勾选的一个设置；
+
+第三步，出现了一个未命名的设置；
+
+第四步，新建一个Rule在你的设置中；点击add就会出现Rewrite Rule的编辑框。
+
+Type选择Modify Header，where可以根据你的需要来，一般都是响应的内容。
+
+Match中的值就是你需要替换的那块，我是要把application／jason替换成它的编码
+
+格式为UTF-8，所以在Replace中Content-Type的值增加了charset=UFT-8，点击
+
+ok就完成了Rule的建立。再看Rewrite Settings里的内容就会新增一条Type为
+
+Modify的Rule。
+
+替换完毕之后，再去做Map Local等等的请求时，就会发现客户端的中文内容不再不是
+
+一片乱码啦！
+
+
+
