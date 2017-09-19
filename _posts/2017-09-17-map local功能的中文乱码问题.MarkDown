@@ -9,9 +9,7 @@ excerpt: charles.
  
 # charles抓包工具中文乱码问题
 
-charles是一款非常适合mac使用的抓包工具，其功能的强大对于测试人员来说掌握熟悉之后，能提高不少工作效率。之前整理过charles抓包工具对测试人员来说的使用点。其实在整理到
-
-Map Local时，重定向遇到了中文乱码的问题，查询部分资料才解决这个问题。现也整理进自己的学习笔记，以便大家入坑。
+charles是一款非常适合mac使用的抓包工具，其功能的强大对于测试人员来说掌握熟悉之后，能提高不少工作效率。之前整理过charles抓包工具对测试人员来说的使用点。其实在整理到Map Local时，重定向遇到了中文乱码的问题，查询部分资料才解决这个问题。现也整理进自己的学习笔记，以便大家入坑。
 
 ## 编码格式的自查 
 
@@ -39,21 +37,7 @@ Map Local时，重定向遇到了中文乱码的问题，查询部分资料才�
 
 第三步，出现了一个未命名的设置；
 
-第四步，新建一个Rule在你的设置中；点击add就会出现Rewrite Rule的编辑框。
-
-Type选择Modify Header，where可以根据你的需要来，一般都是响应的内容。
-
-Match中的值就是你需要替换的那块，我是要把application／jason替换成它的编码
-
-格式为UTF-8，所以在Replace中Content-Type的值增加了charset=UFT-8，点击
-
-ok就完成了Rule的建立。再看Rewrite Settings里的内容就会新增一条Type为
-
-Modify的Rule。
-
-替换完毕之后，再去做Map Local等等的请求时，就会发现客户端的中文内容不再不是
-
-一片乱码啦！
+第四步，新建一个Rule在你的设置中；点击add就会出现Rewrite Rule的编辑框。Type选择Modify Header，where可以根据你的需要来，一般都是响应的内容。Match中的值就是你需要替换的那块，我是要把application／jason替换成它的编码格式为UTF-8，所以在Replace中Content-Type的值增加了charset=UFT-8，点击ok就完成了Rule的建立。再看Rewrite Settings里的内容就会新增一条Type为Modify的Rule。替换完毕之后，再去做Map Local等等的请求时，就会发现客户端的中文内容不再不是一片乱码啦！
 
 
 
