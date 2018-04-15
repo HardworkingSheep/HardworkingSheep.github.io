@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "charles抓包工具小试牛刀"
+title:  "charles抓包工具的中文乱码问题"
 date:   2017-09-17 22:49:00 +0800
 categories: jekyll update
 tags: [charles 中文乱码问题]
 excerpt: charles.
 ---
  
-# charles抓包工具中文乱码问题
+# charles 中文乱码问题
 
 charles是一款非常适合mac使用的抓包工具，其功能的强大对于测试人员来说掌握熟悉之后，能提高不少工作效率。之前整理过charles抓包工具对测试人员来说的使用点。其实在整理到Map Local时，重定向遇到了中文乱码的问题，查询部分资料才解决这个问题。现也整理进自己的学习笔记，以便大家入坑。
 
